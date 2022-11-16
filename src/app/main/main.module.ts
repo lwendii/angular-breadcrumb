@@ -14,7 +14,6 @@ import { HomeComponent } from './home/home.component';
     MainRoutingModule
   ],
   exports: [
-    // HomeComponent
   ]
 })
 export class MainModule { }

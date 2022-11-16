@@ -1,3 +1,6 @@
-<p>home works!</p>
-<div (click)="goToUsers()"> Go to users</div>
+<div *ngIf="!hasChildren">
+  <p>home works!</p>
+  <div (click)="goToUsers()"> Go to users</div>
+</div>
+
 <router-outlet></router-outlet>
