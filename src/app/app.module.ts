@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { BreadcrumbListComponent } from './shared/breadcrumb-list/breadcrumb-list.component';
+import { UserManagementModule } from './user-management/user-management.module';
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,7 @@ import { BreadcrumbListComponent } from './shared/breadcrumb-list/breadcrumb-lis
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

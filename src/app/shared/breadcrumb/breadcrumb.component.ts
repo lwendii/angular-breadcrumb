@@ -23,9 +23,7 @@ export class BreadcrumbComponent implements OnInit {
       distinctUntilChanged()
     ).subscribe(() => {
       const root = this.router.routerState.snapshot.root; 
-      console.log('root', root);
       this.breadcrumbs = this.buildBreadCrumb(this.activatedRoute.root);
-      console.log('breadcrumbs', this.breadcrumbs);
     })
   }
 
@@ -34,8 +32,6 @@ export class BreadcrumbComponent implements OnInit {
     ? route.routeConfig.data['breadcrumb']
     : "";
 
-    console.log('route', route);
-    
     let path = route.routeConfig && route.routeConfig.data ? route.routeConfig.path : "";
 
     if(path) {

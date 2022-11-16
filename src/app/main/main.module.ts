@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     MainRoutingModule
+  ],
+  exports: [
+    // HomeComponent
   ]
 })
 export class MainModule { }

@@ -19,7 +19,7 @@ export class BreadcrumbService {
       const root = this.router.routerState.snapshot.root; 
       const breadcrumbs: IBreadCrumb[] = []; 
       this.addBreadcrumb(root, [], breadcrumbs); 
- 
+      console.log('root', root);
       // Emit the new hierarchy 
       this._breadcrumbs$.next(breadcrumbs); 
     });
